@@ -1,2 +1,2 @@
 # Sass-Default
-To build readable css
+To build readable scripts and make faster
