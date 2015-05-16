@@ -4,43 +4,6 @@ To build readable css
 
 # NamingGuidelines
 ```html
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Tosh CSS Guidelines</title>
-<style type="text/css">
-
-ul{
-	list-style-type:none;
-	padding-left:0;
-}
-td,th{
-	padding:10px;
-}
-td:nth-child(3){
-	text-align:center;
-}
-th{
-	background:#eee;
-}
-tr:nth-child(2){
-	background:#f9ffff;
-}
-tr:nth-child(3){
-	background:#fff9ff;
-}
-tr:nth-child(4){
-	background:#fffff2;
-}
-dt{
-	font-weight:600;
-}
-
-</style>
-</head>
-
-<body>
 <article>
 <h1>CSS Naming Rule Guidelines</h1>
 <p><small> Author: Toshiki Yamamoto<br>Date: 2014/11/21</small></p>
@@ -154,6 +117,4 @@ dt{
     </dl>
 </section>
 </article>
-</body>
-</html>
 ```
