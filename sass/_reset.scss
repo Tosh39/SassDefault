@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/************************************************************************************
+						  				
+								_RESET.scss
+										
+*************************************************************************************/
+
+html{
+	overflow-x:hidden;
+}
+
+html,
+body{
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+html { height: 100%; }
+body { min-height: 100%; }
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+   margin:0;
+   padding:0;
+}
+
+body, textarea, input{
+/*	font-family:YuMincho, YuGothic,"Hiragino Kaku Gothic ProN", Meiryo, sans-serif;	*/
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+}
+
+section, nav, article, aside, hgroup, header, footer, address {
+	display: block;
+}
+
+table {
+   border-collapse:collapse;
+   border-spacing:0;
+}
+
+img { 
+   border:0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-size:100%;
+   font-weight:normal;
+}
+
+ol,ul{
+	list-style-type:none;
+}
+
+address{
+	font-style:normal;
+}
