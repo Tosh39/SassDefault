@@ -1,0 +1,26 @@
+// -----------------------------
+// Media Query
+
+@mixin min($min_width){
+  @media screen and (min-width:#{$min_width}px){
+    @content;
+  }
+}
+@mixin max($max_width){
+  @media screen and (max-width:#{$max_width}px){
+    @content;
+  }
+}
+
+@mixin min_max($min_width, $max_width){
+  @media screen and (min-width:#{$min_width}px) and (max-width:#{$max_width}px) {
+    @content;
+  }
+}
+
+// -----------------------------
+// Font Size
+
+@mixin fontSize($fontSize, $baseFontSize:14){
+    font-size: percentage($fontSize / $baseFontSize);
+}

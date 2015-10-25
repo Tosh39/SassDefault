@@ -1,0 +1,98 @@
+// Utilities
+// Naming Rule -> ".u-****"
+//
+
+@for $num from 1 through 12 {
+  %u-gr#{num}, .u-gr#{$num} {
+    width: calc(100% * $num / 12);
+    min-height:1px;
+    box-sizing:border-box;
+  }
+}
+@include min(768) {
+  @for $num from 1 through 12 {
+    %u-grs#{$num}, .u-grs#{$num} {
+      width: calc(100% * $num / 12);
+      min-height:1px;
+      box-sizing:border-box;
+    }
+  }
+}
+@include min(992) {
+  @for $num from 1 through 12 {
+    %u-grm#{$num}, .u-grm#{$num} {
+      width: calc(100% * $num / 12);
+      min-height:1px;
+      box-sizing:border-box;
+    }
+  }
+}
+
+@for $num from 1 through 9 {
+  $px: $num;
+  %u-mt#{$px}, .u-mt#{$px} {
+    margin-top: #{$px}px;
+  }
+  %u-mb#{$px}, .u-mb#{$px} {
+    margin-bottom: #{$px}px;
+  }
+}
+
+@for $num from 2 through 10 {
+  $px: $num * 5;
+  %u-mt#{$px}, .u-mt#{$px} {
+    margin-top: #{$px}px;
+  }
+  %u-mb#{$px}, .u-mb#{$px} {
+    margin-bottom: #{$px}px;
+  }
+}
+
+@for $num from 1 through 10 {
+  $px: $num * 5;
+  %u-pt#{$px}, .u-pt#{$px} {
+    padding-top: #{$px}px;
+  }
+  %u-pb#{$px}, .u-pb#{$px} {
+    padding-bottom: #{$px}px;
+  }
+  %u-plr#{$px}, .u-plr#{$px} {
+    padding-left:  #{$px}px;
+    padding-right: #{$px}px;
+  }
+}
+
+%u-fl, .u-fl { float: left; }
+%u-fr, .u-fr { float: right; }
+
+%clearfix, .clearfix {
+  &:before, &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear:both;
+  }
+}
+
+// Text & Font
+
+@for $num from 10 through 40 {
+  %u-fs#{$num}, .u-fs#{$num}{ @include fontSize($num); }
+}
+
+%u-tal .u-tal { text-align: left; }
+%u-tar .u-tar { text-align: right; }
+%u-tac .u-tac { text-align: center; }
+
+%u-tn, .u-tn { font-weight: normal; }
+%u-tb, .u-tb { font-weight: bold; }
+
+
+.copyright {
+  font-size:small;
+  text-align:center;
+  color:#fff;
+  &:before{ content:'\00a9  2015 '; }
+  &:after{ content:' All rights reserved.'; }
+}
