@@ -81,9 +81,9 @@
   %u-fs#{$num}, .u-fs#{$num}{ @include fontSize($num); }
 }
 
-%u-tal .u-tal { text-align: left; }
-%u-tar .u-tar { text-align: right; }
-%u-tac .u-tac { text-align: center; }
+%u-tal, .u-tal { text-align: left; }
+%u-tar, .u-tar { text-align: right; }
+%u-tac, .u-tac { text-align: center; }
 
 %u-tn, .u-tn { font-weight: normal; }
 %u-tb, .u-tb { font-weight: bold; }
