@@ -4,7 +4,7 @@
 
 @for $num from 1 through 12 {
   %u-gr#{num}, .u-gr#{$num} {
-    width: calc(100% * $num / 12);
+    width: calc(100% * #{$num} / 12);
     min-height:1px;
     box-sizing:border-box;
   }
@@ -12,7 +12,7 @@
 @include min(768) {
   @for $num from 1 through 12 {
     %u-grs#{$num}, .u-grs#{$num} {
-      width: calc(100% * $num / 12);
+      width: calc(100% * #{$num} / 12);
       min-height:1px;
       box-sizing:border-box;
     }
@@ -21,7 +21,7 @@
 @include min(992) {
   @for $num from 1 through 12 {
     %u-grm#{$num}, .u-grm#{$num} {
-      width: calc(100% * $num / 12);
+      width: calc(100% * #{$num} / 12);
       min-height:1px;
       box-sizing:border-box;
     }
