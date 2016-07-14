@@ -2,6 +2,15 @@
 // Naming Rule -> ".u-****"
 //
 
+.u-grid {
+  &:before, &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear:both;
+  }
+}
 @for $num from 1 through 12 {
   %u-gr#{num}, .u-gr#{$num} {
     width: calc(100% * #{$num} / 12);
